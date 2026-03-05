@@ -1,3 +1,4 @@
+/* ===== GLOBAL ===== */
 * {
     margin: 0;
     padding: 0;
@@ -20,8 +21,7 @@ section {
     padding: 80px 0;
 }
 
-/* ===== NAV ===== */
-
+/* ===== NAVIGATION ===== */
 .navbar {
     position: sticky;
     top: 0;
@@ -74,42 +74,76 @@ section {
 }
 
 /* ===== HERO ===== */
-
 .hero {
+    position: relative;
     text-align: center;
-    padding: 140px 0;
+    min-height: 700px;
+    /* adjust for your layout */
+    height: 100vh;
+    /* fills viewport */
     color: white;
-    background: linear-gradient(-45deg, #B11226, #8E0E1F, #1C1C1C, #2E2E2E);
-    background-size: 400% 400%;
-    animation: gradientMove 12s ease infinite;
+    overflow: hidden;
+    background: url('../img/infection.jpg') center/cover no-repeat;
 }
 
-@keyframes gradientMove {
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    /* subtle gradient overlay on top of image */
+    background: linear-gradient(rgba(177, 18, 38, 0.3), rgba(28, 28, 28, 0.3));
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    /* text above overlay */
+}
+
+/* Floating particles */
+.particle-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 1;
+    /* between image and text */
+}
+
+.particle {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    pointer-events: none;
+    animation-name: floatUp;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes floatUp {
     0% {
-        background-position: 0% 50%;
+        transform: translateY(100vh) scale(0.5);
+        opacity: 0;
     }
 
-    50% {
-        background-position: 100% 50%;
+    10% {
+        opacity: 1;
     }
 
     100% {
-        background-position: 0% 50%;
+        transform: translateY(-10vh) scale(0.5);
+        opacity: 0;
     }
 }
 
-.hero h1 {
-    font-size: 42px;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    max-width: 600px;
-    margin: 0 auto 30px;
-}
-
 /* ===== BUTTON ===== */
-
 .btn-primary {
     background: white;
     color: #B11226;
@@ -125,7 +159,6 @@ section {
 }
 
 /* ===== FEATURES ===== */
-
 .features {
     background: #F4F6F8;
     text-align: center;
@@ -144,7 +177,6 @@ section {
 }
 
 /* ===== SERVICES ===== */
-
 .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -167,7 +199,6 @@ section {
 }
 
 /* ===== ABOUT ===== */
-
 .about-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -176,7 +207,6 @@ section {
 }
 
 /* ===== CONTACT ===== */
-
 .contact {
     background: #1C1C1C;
     color: white;
@@ -199,7 +229,6 @@ section {
 }
 
 /* ===== MOBILE ===== */
-
 @media (max-width: 768px) {
 
     .nav-links {
