@@ -75,13 +75,17 @@ section {
 
 /* ===== HERO ===== */
 .hero {
-    position: relative;
-    text-align: center;
-    min-height: 600px;
-    padding: 140px 20px;
-    color: white;
-    overflow: hidden;
-    background: url('../img/infection.jpg') center/cover no-repeat;
+  background-image: url('../img/infection.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  height: 90vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .hero::before {
@@ -99,6 +103,10 @@ section {
 .hero-content{
     position: relative;
     z-index: 2;
+}
+
+.hero-content p{
+  margin: 15px 0 25px 0;
 }
 
 /* Floating particles */
@@ -143,7 +151,7 @@ section {
 .btn-primary {
     background: white;
     color: #B11226;
-    padding: 14px 28px;
+    padding: 12px 24px;
     text-decoration: none;
     font-weight: 600;
     border-radius: 4px;
