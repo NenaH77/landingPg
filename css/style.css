@@ -77,7 +77,7 @@ section {
 .hero {
   background-image: url('../img/infection.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: relative;
   background-repeat: no-repeat;
 
   height: 90vh;
@@ -88,25 +88,36 @@ section {
   text-align: center;
 }
 
-.hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0,0,0,.45);
-}
-
-    /* subtle gradient overlay on top of image */
-    background: linear-gradient(rgba(177, 18, 38, 0.3), rgba(28, 28, 28, 0.3));
-    z-index: 1;
-}
-
 .hero-content{
     position: relative;
     z-index: 2;
 }
 
+.hero h1 {
+  color: #ffffff;
+  font-size: 48px;
+}
+
+.hero p {
+  color: #f2f2f2;
+  font-size: 18px;
+}
+
 .hero-content p{
   margin: 15px 0 25px 0;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,.45);
+    z-index: 1;
+}
+
+    /* subtle gradient overlay on top of image */
+    background: linear-gradient(rgba(177, 18, 38, 0.3), rgba(28, 28, 28, 0.3));
+    z-index: 1;
 }
 
 /* Floating particles */
@@ -150,16 +161,18 @@ section {
 /* ===== BUTTON ===== */
 .btn-primary {
     background: white;
-    color: #B11226;
-    padding: 12px 24px;
+    color: #c32026;
+    padding: 12px 28px;
     text-decoration: none;
     font-weight: 600;
-    border-radius: 4px;
+    border-radius: 6px;
     transition: 0.3s;
+    display: inline-block;
 }
 
 .btn-primary:hover {
     background: #F4F6F8;
+    color: white;
 }
 
 /* ===== FEATURES ===== */
