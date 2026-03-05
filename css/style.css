@@ -77,10 +77,8 @@ section {
 .hero {
     position: relative;
     text-align: center;
-    min-height: 700px;
-    /* adjust for your layout */
-    height: 100vh;
-    /* fills viewport */
+    min-height: 550px;
+    padding: 120px 20px;
     color: white;
     overflow: hidden;
     background: url('../img/infection.jpg') center/cover no-repeat;
