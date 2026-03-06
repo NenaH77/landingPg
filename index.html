@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,109 +12,89 @@
 
 <body>
 
-<!-- NAVIGATION -->
-<header class="header">
+<!-- NAVBAR -->
 
-<div class="container">
+<header class="navbar">
+<div class="container nav-container">
 
-<nav class="nav">
+<h2 class="logo">PD Healthcare Specialty</h2>
 
-<div class="logo">
-LOGO PLACEHOLDER
-</div>
-
+<nav>
 <ul class="nav-menu">
-
+<li><a href="#">Home</a></li>
 <li><a href="#services">Services</a></li>
 <li><a href="#features">Features</a></li>
 <li><a href="#about">About</a></li>
 <li><a href="#contact">Contact</a></li>
-
 </ul>
-
 </nav>
 
 </div>
-
 </header>
 
 
 <!-- HERO -->
+
 <section class="hero">
 
-<div class="particle-container"></div>
+<img src="img/infection.jpg" class="hero-bg">
 
-<div class="container">
+<div class="hero-overlay"></div>
 
-<div class="hero-content">
+<div class="hero-content container">
 
-<h1>Healthcare Infection Control</h1>
+<h1>Advanced Infection Control Solutions</h1>
 
-<p>
-Specialized infection control solutions for outpatient healthcare facilities.
-</p>
+<p>Protecting outpatient facilities with compliant, professional sanitation systems.</p>
 
-<a href="#contact" class="btn-primary">
-Schedule Consultation
-</a>
+<a href="#contact" class="btn-primary">Request a Consultation</a>
 
 </div>
 
-</div>
+<div id="particles-js"></div>
 
 </section>
 
 
 <!-- SERVICES -->
-<section id="services" class="services">
+
+<section id="services" class="services section">
 
 <div class="container">
 
 <h2 class="section-title">Our Services</h2>
 
-<div class="services-grid">
+<div class="service-grid">
 
 <div class="service-card">
 
-<div class="img-placeholder">
-IMAGE
-</div>
+<img src="img/service-placeholder.jpg" class="service-img">
 
-<h3>Biohazard Cleanup</h3>
+<h3>Infection Prevention Audits</h3>
 
-<p>
-Certified remediation and contamination cleanup.
-</p>
+<p>Comprehensive infection control assessments for outpatient healthcare facilities.</p>
 
 </div>
 
 
 <div class="service-card">
 
-<div class="img-placeholder">
-IMAGE
-</div>
+<img src="img/service-placeholder.jpg" class="service-img">
 
-<h3>Infection Prevention</h3>
+<h3>Regulatory Compliance</h3>
 
-<p>
-Healthcare-grade infection control solutions.
-</p>
+<p>Ensure your facility meets CDC, OSHA, and healthcare sanitation standards.</p>
 
 </div>
 
 
 <div class="service-card">
 
-<div class="img-placeholder">
-IMAGE
-</div>
+<img src="img/service-placeholder.jpg" class="service-img">
 
-<h3>Emergency Response</h3>
+<h3>Training & Protocols</h3>
 
-<p>
-24/7 rapid response teams.
-</p>
+<p>Staff training programs to maintain safe infection control environments.</p>
 
 </div>
 
@@ -124,129 +103,141 @@ IMAGE
 </div>
 
 </section>
+
+
+
+<!-- WHY CHOOSE US -->
+
+<section id="features" class="features section">
+
+<div class="container">
+
+<h2 class="section-title">Why Choose Us</h2>
+
+<div class="feature-grid">
+
+<div class="feature">
+
+<div class="icon-placeholder"></div>
+
+<h3>Healthcare Expertise</h3>
+
+<p>Focused infection control programs designed for healthcare environments.</p>
+
+</div>
+
+<div class="feature">
+
+<div class="icon-placeholder"></div>
+
+<h3>Compliance Driven</h3>
+
+<p>Aligned with CDC and OSHA healthcare safety guidelines.</p>
+
+</div>
+
+<div class="feature">
+
+<div class="icon-placeholder"></div>
+
+<h3>Trusted Results</h3>
+
+<p>Proven systems helping facilities maintain safety and accreditation.</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
 
 
 <!-- 3D SPLINE SECTION -->
-<section class="spline-section">
 
-<div class="container spline-layout">
+<section class="threeD section">
 
-<div class="spline-text">
+<div class="container">
 
-<h2>Advanced Infection Control Technology</h2>
+<h2 class="section-title">Interactive Infection Model</h2>
+
+<p class="center-text">Visualizing contamination risk in healthcare environments.</p>
+
+<div class="spline-container">
+
+<!-- replace src with your spline export -->
+<iframe src="spline/virus.html" frameborder="0"></iframe>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- ABOUT -->
+
+<section id="about" class="about section">
+
+<div class="container about-grid">
+
+<img src="img/about-placeholder.jpg" class="about-img">
+
+<div>
+
+<h2>About PD Healthcare Specialty</h2>
 
 <p>
-Our healthcare teams utilize specialized containment and remediation procedures designed for medical environments.
+We help outpatient facilities maintain the highest infection control standards.
+Our programs protect patients, staff, and regulatory compliance.
 </p>
 
 </div>
 
-<div class="spline-3d">
-
-<!-- SPLINE 3D MODEL GOES HERE -->
-
-<!-- Example embed -->
-
-<!--
-<script type="module" src="https://unpkg.com/@splinetool/viewer@1.0.0/build/spline-viewer.js"></script>
-<spline-viewer url="YOUR_SPLINE_LINK"></spline-viewer>
--->
-
-</div>
-
 </div>
 
 </section>
 
-
-<!-- FEATURES -->
-<section id="features" class="features">
-
-<div class="container">
-
-<h2 class="section-title">Why Healthcare Facilities Choose Us</h2>
-
-<div class="features-grid">
-
-<div class="feature-card">
-
-<div class="icon-placeholder">
-ICON
-</div>
-
-<h3>Certified Specialists</h3>
-
-</div>
-
-
-<div class="feature-card">
-
-<div class="icon-placeholder">
-ICON
-</div>
-
-<h3>Healthcare Compliance</h3>
-
-</div>
-
-
-<div class="feature-card">
-
-<div class="icon-placeholder">
-ICON
-</div>
-
-<h3>Rapid Response</h3>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
 
 
 <!-- PAUL DAVIS DIVISION -->
-<section class="paul-davis">
+
+<section class="division">
 
 <div class="container">
 
-<h2>Part of the Paul Davis Network</h2>
+<h3>Part of the Paul Davis Network</h3>
 
 <p>
-
-This healthcare specialty division operates under the trusted Paul Davis restoration brand.
-
+PD Healthcare Specialty operates as a division of Paul Davis Restoration,
+bringing national expertise in remediation and infection control.
 </p>
-
-<div class="img-placeholder">
-PAUL DAVIS LOGO
-</div>
 
 </div>
 
 </section>
 
 
+
 <!-- CONTACT -->
-<section id="contact" class="contact">
+
+<section id="contact" class="contact section">
 
 <div class="container">
 
 <h2 class="section-title">Contact Us</h2>
 
-<form class="contact-form">
+<form action="contact.php" method="POST" class="contact-form">
 
-<input type="text" placeholder="Name">
+<input type="text" name="name" placeholder="Your Name" required>
 
-<input type="email" placeholder="Email">
+<input type="email" name="email" placeholder="Email Address" required>
 
-<textarea placeholder="Message"></textarea>
+<textarea name="message" placeholder="How can we help?" required></textarea>
 
-<button type="submit" class="btn-primary">
-Send Message
-</button>
+<button type="submit" class="btn-primary">Send Message</button>
 
 </form>
 
@@ -255,21 +246,23 @@ Send Message
 </section>
 
 
+
 <!-- FOOTER -->
-<footer class="footer">
+
+<footer>
 
 <div class="container">
 
-<p>
-© 2026 PD Healthcare Specialty | A Paul Davis Company
-</p>
+<p>© 2026 PD Healthcare Specialty</p>
 
 </div>
 
 </footer>
 
 
+
 <script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
 
 </body>
 </html>
