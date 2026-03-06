@@ -138,16 +138,16 @@ animation:float 12s linear infinite;
 
 @keyframes float{
 
-0%{
+10%{
 transform:translateY(100vh);
 opacity:0;
 }
 
-10%{
+20%{
 opacity:1;
 }
 
-100%{
+80%{
 transform:translateY(-10vh);
 opacity:0;
 }
