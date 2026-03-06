@@ -5,6 +5,31 @@ box-sizing:border-box;
 font-family:Arial, Helvetica, sans-serif;
 }
 
+/* PLACEHOLDERS */
+.img-placeholder{
+  width:100%;
+  height:180px;
+  background:#e5e5e5;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#666;
+  font-size:14px;
+  border-radius:6px;
+}
+
+.img-placeholder.large{
+  height:300px;
+}
+
+.icon-placeholder{
+  width:60px;
+  height:60px;
+  background:#B11226;
+  border-radius:50%;
+  margin:0 auto 20px;
+}
+
 
 /* NAVBAR */
 
