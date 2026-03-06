@@ -28,13 +28,22 @@ sections.forEach(section => {
 });
 
 // Particle generator
-particlesJS("particles-js", {
 
-particles:{
-number:{value:40},
-size:{value:3},
-move:{speed:1},
-line_linked:{enable:false}
+const container = document.querySelector("particles-js")
+
+for(let i=0;i<40;i++){
+
+let particle=document.createElement("span")
+
+particle.classList.add("particle")
+
+particle.style.left=Math.random()*100+"%"
+
+particle.style.animationDuration=5+Math.random()*10+"s"
+
+particle.style.width=particle.style.height=
+Math.random()*6+2+"px"
+
+container.appendChild(particle)
+
 }
-
-});
