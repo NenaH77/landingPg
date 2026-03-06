@@ -2,47 +2,54 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
+font-family:Arial;
 }
 
 body{
-font-family:Arial, Helvetica, sans-serif;
 line-height:1.6;
 color:#333;
 }
 
-/* CONTAINER */
-
 .container{
+width:90%;
 max-width:1200px;
 margin:auto;
-padding:0 20px;
 }
 
+.section{
+padding:80px 0;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:50px;
+font-size:32px;
+}
 
 /* NAV */
 
-.header{
+.navbar{
 background:white;
-box-shadow:0 2px 6px rgba(0,0,0,0.1);
+border-bottom:1px solid #eee;
 }
 
-.nav{
+.nav-container{
 display:flex;
 justify-content:space-between;
 align-items:center;
-height:70px;
+padding:20px 0;
 }
 
 .nav-menu{
 display:flex;
-gap:30px;
+gap:25px;
 list-style:none;
 }
 
 .nav-menu a{
 text-decoration:none;
 color:#333;
-font-weight:600;
+font-weight:500;
 }
 
 
@@ -50,86 +57,55 @@ font-weight:600;
 
 .hero{
 position:relative;
-height:90vh;
+height:650px;
 display:flex;
 align-items:center;
+justify-content:center;
 color:white;
+text-align:center;
+overflow:hidden;
+}
 
-background:
-linear-gradient(rgba(177,18,38,0.7),rgba(28,28,28,0.7)),
-url('../img/infection.jpg') center/cover no-repeat;
+.hero-bg{
+position:absolute;
+width:100%;
+height:100%;
+object-fit:cover;
+z-index:0;
+}
+
+.hero-overlay{
+position:absolute;
+width:100%;
+height:100%;
+background:rgba(0,0,0,.45);
+z-index:1;
 }
 
 .hero-content{
-max-width:600px;
-z-index:2;
+position:relative;
+z-index:3;
 }
 
 .hero h1{
 font-size:48px;
-margin-bottom:20px;
+margin-bottom:15px;
 }
 
 .btn-primary{
-display:inline-block;
-background:#B11226;
-color:white;
+background:#c4122f;
 padding:14px 28px;
+color:white;
 text-decoration:none;
-border-radius:4px;
+display:inline-block;
+border-radius:5px;
 margin-top:20px;
-}
-
-
-/* PARTICLES */
-
-.particle-container{
-position:absolute;
-width:100%;
-height:100%;
-top:0;
-left:0;
-overflow:hidden;
-z-index:1;
-}
-
-.particle{
-position:absolute;
-width:6px;
-height:6px;
-background:white;
-border-radius:50%;
-opacity:0.3;
-animation:floatUp linear infinite;
-}
-
-@keyframes floatUp{
-
-0%{
-transform:translateY(100vh);
-opacity:0;
-}
-
-10%{
-opacity:0.4;
-}
-
-100%{
-transform:translateY(-10vh);
-opacity:0;
-}
-
 }
 
 
 /* SERVICES */
 
-.services{
-padding:100px 0;
-background:#f5f5f5;
-}
-
-.services-grid{
+.service-grid{
 display:grid;
 grid-template-columns:repeat(3,1fr);
 gap:30px;
@@ -138,100 +114,97 @@ gap:30px;
 .service-card{
 background:white;
 padding:30px;
-border-radius:6px;
+border-radius:8px;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
 text-align:center;
 }
 
-
-/* IMAGE PLACEHOLDER */
-
-.img-placeholder{
+.service-img{
+width:100%;
 height:180px;
-background:#ddd;
-display:flex;
-align-items:center;
-justify-content:center;
-margin-bottom:20px;
+object-fit:cover;
+margin-bottom:15px;
 }
 
 
-/* SPLINE SECTION */
+/* FEATURES */
 
-.spline-section{
-padding:100px 0;
+.feature-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:40px;
+text-align:center;
 }
 
-.spline-layout{
+.icon-placeholder{
+width:70px;
+height:70px;
+background:#c4122f;
+border-radius:50%;
+margin:0 auto 15px;
+}
+
+
+/* SPLINE */
+
+.spline-container{
+width:100%;
+height:500px;
+margin-top:30px;
+}
+
+.spline-container iframe{
+width:100%;
+height:100%;
+border:none;
+}
+
+
+/* ABOUT */
+
+.about-grid{
 display:grid;
 grid-template-columns:1fr 1fr;
 gap:40px;
 align-items:center;
 }
 
-.spline-3d{
-height:400px;
-background:#eee;
+.about-img{
+width:100%;
+border-radius:8px;
 }
 
 
-/* FEATURES */
+/* DIVISION */
 
-.features{
-padding:100px 0;
-background:#fafafa;
-}
-
-.features-grid{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:30px;
-}
-
-.icon-placeholder{
-height:60px;
-width:60px;
-background:#ddd;
-margin:auto;
-margin-bottom:20px;
-}
-
-
-/* PAUL DAVIS SECTION */
-
-.paul-davis{
-padding:80px 0;
-background:#1c1c1c;
-color:white;
+.division{
+background:#f4f4f4;
+padding:50px 0;
 text-align:center;
 }
 
 
 /* CONTACT */
 
-.contact{
-padding:100px 0;
-}
-
 .contact-form{
-max-width:600px;
-margin:auto;
 display:flex;
 flex-direction:column;
-gap:20px;
+gap:15px;
+max-width:500px;
+margin:auto;
 }
 
 .contact-form input,
 .contact-form textarea{
 padding:12px;
 border:1px solid #ccc;
+border-radius:4px;
 }
 
-
-/* FOOTER */
-
-.footer{
+footer{
 background:#111;
 color:white;
 text-align:center;
 padding:20px 0;
+margin-top:50px;
 }
