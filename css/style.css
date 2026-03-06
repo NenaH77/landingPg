@@ -57,14 +57,18 @@ font-weight:500;
 
 .hero{
 position:relative;
-height:650px;
+height:100vh;
 display:flex;
-align-items:center;
 justify-content:center;
-color:white;
+align-items:center;
 text-align:center;
+color:white;
+background:
+linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)),
+url('../img/infection.jpg') center/cover no-repeat;
 overflow:hidden;
 }
+
 
 .hero-bg{
 position:absolute;
