@@ -102,6 +102,15 @@ border-radius:5px;
 margin-top:20px;
 }
 
+.particles span{
+  position:absolute;
+  width:6px;
+  height:6px;
+  background:rgba(255,255,255,.4);
+  border-radius:50%;
+  animation:float 12s linear infinite;
+}
+
 
 /* SERVICES */
 
