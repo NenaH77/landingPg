@@ -28,21 +28,25 @@ sections.forEach(section => {
 });
 
 // Particle generator
-const container = document.querySelector(".particles")
+document.addEventListener("DOMContentLoaded", function(){
+
+const particlesContainer = document.querySelector(".particles")
 
 for(let i = 0; i < 40; i++){
 
-let particle = document.createElement("span")
+  const particle = document.createElement("span")
 
-particle.style.left = Math.random() * 100 + "%"
-particle.style.top = Math.random() * 100 + "%"
+  const size = Math.random() * 6 + 3
+  particle.style.width = size + "px"
+  particle.style.height = size + "px"
 
-particle.style.animationDuration = 5 + Math.random() * 10 + "s"
-particle.style.animationDelay = Math.random() * 10 + "s"
+  particle.style.left = Math.random() * 100 + "%"
+  particle.style.top = Math.random() * 100 + "%"
 
-particle.style.width =
-particle.style.height = Math.random() * 6 + 2 + "px"
+  particle.style.animationDuration = (Math.random()*10 + 10) + "s"
 
-container.appendChild(particle)
+  particlesContainer.appendChild(particle)
 
 }
+
+})
