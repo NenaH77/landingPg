@@ -122,8 +122,9 @@ pointer-events:none;
 position:absolute;
 width:6px;
 height:6px;
-background:rgba(255,255,255,.4);
+background:rgba(255,255,255,.6);
 border-radius:50%;
+filter:blur(1px);
 animation:float 12s linear infinite;
 }
 
