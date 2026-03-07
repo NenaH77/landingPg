@@ -133,7 +133,7 @@ animation:float 12s linear infinite;
 @keyframes float{
 
 0%{
-transform:translateY(0);
+transform:translate(0,0);
 opacity:0;
 }
 
@@ -141,13 +141,16 @@ opacity:0;
 opacity:1;
 }
 
+50%{
+transform:translate(30px,-60vh);
+}
+
 100%{
-transform:translateY(-120vh);
+transform:translate(-20px,-120vh);
 opacity:0;
 }
 
 }
-
 
 
 /* SERVICES */
