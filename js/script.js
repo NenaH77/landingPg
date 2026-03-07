@@ -29,7 +29,7 @@ sections.forEach(section => {
 
 // Particle generator
 
-const container = document.querySelector("particles-js")
+const container = document.querySelector(".particles")
 
 for(let i=0;i<40;i++){
 
