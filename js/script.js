@@ -29,27 +29,23 @@ sections.forEach(section => {
 
 // Particle generator
 document.addEventListener("DOMContentLoaded", function(){
+    const container = document.querySelector(".particles");
+    if(!container) return; // Safety check
 
-const container = document.querySelector(".particles");
+    for(let i = 0; i < 40; i++){
+        const particle = document.createElement("span");
+        const size = Math.random() * 5 + 2; // Smaller is more elegant/expensive looking
 
-for(let i = 0; i < 40; i++){
+        particle.style.width = size + "px";
+        particle.style.height = size + "px";
+        particle.style.left = Math.random() * 100 + "%";
+        
+        // Randomize the start delay so they don't all rise at once
+        particle.style.animationDelay = Math.random() * 10 + "s";
+        particle.style.opacity = Math.random();
 
-  const particle = document.createElement("span");
-
-  const size = Math.random()*6 + 3;
-
-  particle.style.width = size + "px";
-  particle.style.height = size + "px";
-
-  particle.style.left = Math.random()*100 + "%";
-  particle.style.top = Math.random()*100 + "%";
-
-  particle.style.animationDuration = (Math.random()*10 + 10) + "s";
-
-  container.appendChild(particle);
-
-}
-
+        container.appendChild(particle);
+    }
 });
 
 // Form Submission
