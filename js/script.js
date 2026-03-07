@@ -51,3 +51,33 @@ for(let i = 0; i < 40; i++){
 }
 
 });
+
+// Form Submission
+const form = document.getElementById('pd-contact-form');
+const formResponse = document.getElementById('form-response');
+
+form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const formData = new FormData(form);
+    
+    formResponse.innerHTML = "Sending...";
+
+    try {
+        const response = await fetch('contact.php', {
+            method: 'POST',
+            body: formData
+        });
+        
+        const result = await response.text();
+        
+        if (response.status === 200) {
+            formResponse.style.color = "green";
+            form.reset(); // Clear form
+        } else {
+            formResponse.style.color = "red";
+        }
+        formResponse.innerHTML = result;
+    } catch (error) {
+        formResponse.innerHTML = "Connection error. Please try again.";
+    }
+});
