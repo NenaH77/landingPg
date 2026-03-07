@@ -30,23 +30,24 @@ sections.forEach(section => {
 // Particle generator
 document.addEventListener("DOMContentLoaded", function(){
 
-const particlesContainer = document.querySelector(".particles")
+const container = document.querySelector(".particles");
 
 for(let i = 0; i < 40; i++){
 
-  const particle = document.createElement("span")
+  const particle = document.createElement("span");
 
-  const size = Math.random() * 6 + 3
-  particle.style.width = size + "px"
-  particle.style.height = size + "px"
+  const size = Math.random()*6 + 3;
 
-  particle.style.left = Math.random() * 100 + "%"
-  particle.style.top = Math.random() * 100 + "%"
+  particle.style.width = size + "px";
+  particle.style.height = size + "px";
 
-  particle.style.animationDuration = (Math.random()*10 + 10) + "s"
+  particle.style.left = Math.random()*100 + "%";
+  particle.style.top = Math.random()*100 + "%";
 
-  particlesContainer.appendChild(particle)
+  particle.style.animationDuration = (Math.random()*10 + 10) + "s";
+
+  container.appendChild(particle);
 
 }
 
-})
+});
