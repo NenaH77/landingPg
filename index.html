@@ -220,25 +220,21 @@
 <!-- CONTACT -->
 
 <section id="contact" class="contact section">
-
   <div class="container">
-  
-    <h2 class="section-title">Contact Us</h2>
-  
-      <form action="contact.php" method="POST" class="contact-form">
-      
-      <input type="text" name="name" placeholder="Your Name" required>
-      
-      <input type="email" name="email" placeholder="Email Address" required>
-      
-      <textarea name="message" placeholder="How can we help?" required></textarea>
-      
-      <button type="submit" class="btn-primary">Send Message</button>
-      
-      </form>
-  
+    <h2 class="section-title">Schedule a Consultation</h2>
+    <div id="form-response"></div> <form id="pd-contact-form" class="contact-form">
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="email" name="email" placeholder="Work Email Address" required>
+      <select name="facility_type" required>
+          <option value="">Facility Type...</option>
+          <option value="hospital">Hospital / Acute Care</option>
+          <option value="outpatient">Outpatient Clinic</option>
+          <option value="assisted">Assisted Living</option>
+      </select>
+      <textarea name="message" placeholder="How can we assist with your infection control?" required></textarea>
+      <button type="submit" class="btn-primary">Send Secure Request</button>
+    </form>
   </div>
-
 </section>
 
 
