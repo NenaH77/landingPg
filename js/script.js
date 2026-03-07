@@ -38,6 +38,7 @@ particle.style.left = Math.random() * 100 + "%"
 particle.style.top = Math.random() * 100 + "%"
 
 particle.style.animationDuration = 5 + Math.random() * 10 + "s"
+particle.style.animationDelay = Math.random() * 10 + "s"
 
 particle.style.width =
 particle.style.height = Math.random() * 6 + 2 + "px"
