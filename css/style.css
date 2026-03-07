@@ -124,7 +124,10 @@ width:6px;
 height:6px;
 background:rgba(255,255,255,.6);
 border-radius:50%;
+  
 filter:blur(1px);
+box-shadow:0 0 6px rgba(255,255,255,.7);  
+  
 animation:float 12s linear infinite;
 }
 
